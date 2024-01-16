@@ -21,8 +21,20 @@ function TodoList() {
   const [filteredTodos, setFilteredTodos] = useState<Todo[]>(defValues);
 
   useEffect(() => {
+    const storedTasks = JSON.parse(
+      window.localStorage.getItem("tasks") as string
+    );
+    if (storedTasks) {
+      setTasks(storedTasks);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  useEffect(() => {
     setFilteredTodos(tasks);
-    console.log("render");
   }, [tasks]);
 
   const incompleteTasks = useCallback(() => {
