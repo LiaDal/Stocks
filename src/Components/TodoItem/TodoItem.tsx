@@ -8,6 +8,7 @@ type TodoItemProps = {
     id: string;
     text: string;
     completed: boolean;
+    isEditing: boolean;
   };
   deleteTask: (prop: string) => void;
   toggleCompleted: (prop: string) => void;
