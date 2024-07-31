@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import TodoList from "./Components/TodoList/TodoList.tsx";
+import StockList from "../src/Components/StocksList/StockList.tsx";
 
 function App() {
   return (
     <div className="App">
-      <h1>Todont</h1>
-      <TodoList />
+      <h1>Список акций на бирже</h1>
+      <StockList />
     </div>
   );
 }

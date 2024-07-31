@@ -1,0 +1,23 @@
+.wrapper {
+  margin: auto;
+  max-width: 15%;
+  max-height: 16rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 1px 2px 9px gray;
+  background: rgba(0, 0, 0, 0.2);
+  block-size: fit-content;
+  overflow: hidden;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  width: 100%;
+}
